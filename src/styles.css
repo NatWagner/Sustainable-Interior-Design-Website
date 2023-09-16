@@ -38,17 +38,17 @@ header h3 {
 }
 
 header a {
-  background-color: antiquewhite;
-  color: black;
+  background-color: black;
+  border: 1px solid antiquewhite;
+  color: antiquewhite;
   text-decoration: none;
   letter-spacing: 2px;
   padding: 12px 26px;
 }
 
 header a:hover {
-  background-color: black;
-  border: 1px solid antiquewhite;
-  color: antiquewhite;
+  background-color: antiquewhite;
+  color: black;
 }
 
 .container {
