@@ -1,3 +1,83 @@
-h1 {
+body {
+  background-color: grey;
+}
+
+header {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7)),
+    url("../images/header-picture.webp");
+  background-position: center;
+  background-repeat: none;
+  background-size: cover;
+  color: white;
+  padding: 90px 10px;
+  text-align: center;
+}
+
+header h1 {
   font-family: Copperplate, Papyrus, fantasy;
+  font-size: 75px;
+  font-weight: 500;
+  line-height: 0.6;
+  margin: 50px auto;
+}
+
+header h2 {
+  font-size: 35px;
+  font-style: italic;
+  font-weight: 100;
+  letter-spacing: 3px;
+  margin-bottom: 40px;
+}
+
+header h3 {
+  font-size: 20px;
+  font-weight: 200;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+}
+
+header a {
+  background-color: antiquewhite;
+  color: black;
+  text-decoration: none;
+  letter-spacing: 2px;
+  padding: 12px 26px;
+}
+
+header a:hover {
+  background-color: black;
+  border: 1px solid antiquewhite;
+  color: antiquewhite;
+}
+
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+@media (max-width: 900px) {
+  header {
+    font-weight: bolder;
+    padding: 45px 5px;
+  }
+
+  header h1 {
+    font-size: 30px;
+    margin: 10px auto;
+  }
+
+  header h2 {
+    margin-bottom: 20px;
+  }
+
+  header h2,
+  header h3 {
+    font-size: 13px;
+    font-weight: 300;
+  }
+
+  header a {
+    font-size: 8px;
+    padding: 4px 12px;
+  }
 }
