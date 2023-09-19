@@ -23,7 +23,7 @@ header h1 {
 }
 
 header h2 {
-  font-size: 35px;
+  font-size: 28px;
   font-style: italic;
   font-weight: 100;
   letter-spacing: 3px;
@@ -94,7 +94,12 @@ main p {
 section {
   max-width: 100%;
   margin: 0 auto;
-  padding: 80px 20px;
+  padding: 50px 20px;
+}
+
+section h2,
+section h3 {
+  text-align: center;
 }
 
 footer {
@@ -110,6 +115,7 @@ footer {
 footer h3 {
   font-size: 18px;
   font-weight: 700;
+  text-align: left;
 }
 
 footer p {
@@ -153,17 +159,12 @@ footer p a {
 }
 
 .img-responsive {
-  max-width: 100%;
+  width: 100%;
   display: block;
 }
 
 .secondary {
   background-color: lightgray;
-}
-
-section h2,
-section h3 {
-  text-align: center;
 }
 
 section .grid-3-columns {
@@ -209,9 +210,26 @@ section .grid-3-columns {
   color: antiquewhite;
 }
 
-footer .grid-3-colums {
+.video-gallery {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 5px;
+}
+
+.video {
+  width: 100%;
+  aspect-ratio: 2 / 1;
+}
+
+.footer-grid {
   grid-template-columns: 1.5fr 2fr 1.5fr;
   margin: 0 20px;
+}
+
+@media (max-width: 576px) {
+  .footer-grid {
+    grid-template-columns: 1fr;
+  }
 }
 
 @media (max-width: 768px) {
@@ -253,10 +271,6 @@ footer .grid-3-colums {
     font-size: 20px;
   }
 
-  footer {
-    padding: 30px 0;
-  }
-
   footer h3,
   footer a,
   footer p,
@@ -269,9 +283,19 @@ footer .grid-3-colums {
   }
 
   .primary,
-  .secondary .grid-3-columns {
-    grid-template-columns: 1fr;
+  .secondary,
+  .third-section {
     padding: 30px;
+  }
+
+  .primary,
+  .secondary,
+  section .grid-3-columns {
+    grid-template-columns: 1fr;
+  }
+
+  .video-gallery {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
