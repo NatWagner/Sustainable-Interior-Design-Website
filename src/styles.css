@@ -4,8 +4,8 @@ body {
 }
 
 header {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.7)),
-    url("../images/header-background.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.8)),
+    url("../images/header-background2.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -16,15 +16,14 @@ header {
 
 header h1 {
   font-family: Copperplate, Papyrus, fantasy;
-  font-size: 75px;
+  font-size: 90px;
   font-weight: 500;
   line-height: 0.6;
   margin: 0;
 }
 
 header h2 {
-  font-size: 28px;
-  font-style: italic;
+  font-size: 27px;
   font-weight: 100;
   letter-spacing: 3px;
   margin: 20px 0 70px 0;
@@ -40,7 +39,6 @@ header h3 {
 
 header a {
   background-color: black;
-  border: 1px solid antiquewhite;
   color: antiquewhite;
   text-decoration: none;
   letter-spacing: 2px;
@@ -214,11 +212,13 @@ section .grid-3-columns {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-gap: 5px;
+  padding-top: 30px;
 }
 
 .video {
   width: 100%;
   aspect-ratio: 2 / 1;
+  filter: saturate(70%);
 }
 
 .footer-grid {
