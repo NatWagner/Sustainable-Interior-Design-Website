@@ -19,7 +19,7 @@ header h1 {
   font-size: 90px;
   font-weight: 500;
   line-height: 0.6;
-  margin: 0;
+  margin: 50px 0;
 }
 
 header h2 {
@@ -34,7 +34,6 @@ header h3 {
   font-weight: 200;
   text-transform: uppercase;
   letter-spacing: 15px;
-  margin-bottom: 50px;
 }
 
 header a {
@@ -240,11 +239,12 @@ section .grid-3-columns {
 
   header h1 {
     font-size: 40px;
+    margin: 0;
   }
 
   header h2 {
     margin: 15px 0;
-    font-size: 13px;
+    font-size: 10px;
     font-weight: 300;
   }
 
