@@ -1,5 +1,20 @@
+:root {
+  --primary-background-color: #60656b;
+  --secondary-background-color: white;
+  --card-section-background: lightgrey;
+  --button-color-dark: black;
+  --button-color-bright: antiquewhite;
+  --header-font: Copperplate, Papyrus, fantasy;
+}
+
+html {
+  height: 100%;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
 body {
-  background-color: #60656b;
+  background-color: var(--primary-background-color);
   font-family: "Trebuchet MS", Helvetica, sans-serif;
 }
 
@@ -9,13 +24,13 @@ header {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  color: white;
+  color: var(--secondary-background-color);
   padding: 120px 10px 35px 10px;
   text-align: center;
 }
 
 header h1 {
-  font-family: Copperplate, Papyrus, fantasy;
+  font-family: var(--header-font);
   font-size: 90px;
   font-weight: 500;
   line-height: 0.6;
@@ -37,20 +52,20 @@ header h3 {
 }
 
 header a {
-  background-color: black;
-  color: antiquewhite;
+  background-color: var(--button-color-dark);
+  color: var(--button-color-bright);
   text-decoration: none;
   letter-spacing: 2px;
   padding: 12px 26px;
 }
 
 header a:hover {
-  background-color: antiquewhite;
-  color: black;
+  background-color: var(--button-color-bright);
+  color: var(--button-color-dark);
 }
 
 main {
-  background-color: white;
+  background-color: var(--secondary-background-color);
 }
 
 main h2 {
@@ -69,7 +84,7 @@ main h3 {
 
 main h3,
 main h4 {
-  font-family: Copperplate, Papyrus, fantasy;
+  font-family: var(--header-font);
   font-weight: 700;
   line-height: 1.5;
   margin: 10px 0;
@@ -105,7 +120,7 @@ footer {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  color: white;
+  color: var(--secondary-background-color);
   line-height: 1.4;
 }
 
@@ -133,7 +148,7 @@ footer li {
 
 footer a {
   font-size: 14px;
-  color: white;
+  color: var(--secondary-background-color);
   opacity: 0.7;
 }
 
@@ -161,7 +176,7 @@ footer p a {
 }
 
 .secondary {
-  background-color: lightgray;
+  background-color: var(--card-section-background);
 }
 
 section .grid-3-columns {
@@ -169,7 +184,7 @@ section .grid-3-columns {
 }
 
 .card {
-  background-color: white;
+  background-color: var(--secondary-background-color);
   margin: 30px 0;
 }
 
@@ -193,9 +208,9 @@ section .grid-3-columns {
 
 .card-footer a {
   display: block;
-  background-color: antiquewhite;
-  border: 1px solid black;
-  color: black;
+  background-color: var(--button-color-bright);
+  border: 1px solid var(--button-color-dark);
+  color: var(--button-color-dark);
   text-decoration: none;
   letter-spacing: 2px;
   padding: 12px 26px;
@@ -203,21 +218,21 @@ section .grid-3-columns {
 }
 
 .card-footer a:hover {
-  background-color: black;
-  color: antiquewhite;
+  background-color: var(--button-color-dark);
+  color: var(--button-color-bright);
 }
 
-.video-gallery {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-gap: 5px;
-  padding-top: 30px;
+.video-section-wrapper {
+  display: flex;
+  gap: 15px;
+  overflow-x: scroll;
+  padding: 30px 0;
 }
 
 .video {
   width: 100%;
   aspect-ratio: 2 / 1;
-  filter: saturate(70%);
+  filter: saturate(80%);
 }
 
 .footer-grid {
@@ -290,8 +305,7 @@ section .grid-3-columns {
 
   .primary,
   .secondary,
-  section .grid-3-columns,
-  .video-gallery {
+  section .grid-3-columns {
     grid-template-columns: 1fr;
   }
 }
