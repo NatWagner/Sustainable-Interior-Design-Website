@@ -18,6 +18,12 @@ body {
   font-family: "Trebuchet MS", Helvetica, sans-serif;
 }
 
+hr {
+  margin: 0;
+  border: 1px solid var(--secondary-background-color);
+  border-style: groove;
+}
+
 header {
   background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.8)),
     url("../images/header-background2.jpg");
