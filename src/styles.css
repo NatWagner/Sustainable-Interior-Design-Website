@@ -10,7 +10,7 @@ header {
   background-repeat: no-repeat;
   background-size: cover;
   color: white;
-  padding: 120px 10px;
+  padding: 120px 10px 35px 10px;
   text-align: center;
 }
 
@@ -234,12 +234,12 @@ section .grid-3-columns {
 @media (max-width: 768px) {
   header {
     font-weight: bolder;
-    padding: 60px 5px;
+    padding: 60px 5px 35px 5px;
   }
 
   header h1 {
     font-size: 40px;
-    margin: 0;
+    margin: 20px 0;
   }
 
   header h2 {
@@ -290,12 +290,9 @@ section .grid-3-columns {
 
   .primary,
   .secondary,
-  section .grid-3-columns {
-    grid-template-columns: 1fr;
-  }
-
+  section .grid-3-columns,
   .video-gallery {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 1fr;
   }
 }
 
